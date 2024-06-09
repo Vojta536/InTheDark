@@ -1,0 +1,15 @@
+MultiMeshInstance3D
+CollisionShape3D
+Area3D
+StaticBody3D
+Node3D
+MeshInstance3D
+SpotLight3D
+GPUParticles3D
+Label
+NavigationAgent3D
+CharacterBody3D
+NavigationRegion3D
+Camera3D
+AnimatedSprite2D
+Control

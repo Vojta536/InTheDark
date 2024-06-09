@@ -1,0 +1,27 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://b145631kr4ark"]
+
+[ext_resource type="Texture2D" uid="uid://bxvyly33giqif" path="res://Textures/NightSky.jpg" id="1_vgffg"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q4oq6"]
+sky_top_color = Color(0.0392157, 0.0588235, 0.0823529, 1)
+sky_horizon_color = Color(0.231373, 0.239216, 0.247059, 1)
+sky_cover = ExtResource("1_vgffg")
+sky_cover_modulate = Color(0.396078, 0.396078, 0.396078, 1)
+ground_horizon_color = Color(0.105882, 0.105882, 0.113725, 1)
+
+[sub_resource type="Sky" id="Sky_o6h4s"]
+sky_material = SubResource("ProceduralSkyMaterial_q4oq6")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_o6h4s")
+tonemap_mode = 2
+ssao_enabled = true
+sdfgi_enabled = true
+sdfgi_read_sky_light = false
+glow_enabled = true
+glow_normalized = true
+glow_blend_mode = 0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0105
+volumetric_fog_albedo = Color(0.203922, 0.203922, 0.203922, 1)
