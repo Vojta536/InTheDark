@@ -1,3 +1,4 @@
+AudioStreamPlayer
 MultiMeshInstance3D
 CollisionShape3D
 Area3D
@@ -12,4 +13,3 @@ CharacterBody3D
 NavigationRegion3D
 Camera3D
 AnimatedSprite2D
-Control

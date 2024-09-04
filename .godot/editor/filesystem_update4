@@ -1,7 +1,5 @@
 res://scenes/MainGame.tscn
+res://scenes/Foggy.tres
 res://shaders/NoiseShaderTest.gdshader
 res://scenes/Treemesh.tres
 res://shaders/NoiseShader.gdshader
-res://tree.mesh
-res://Enviroments/Env1.tres
-res://scenes/Foggy.tres

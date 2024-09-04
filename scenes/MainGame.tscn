@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://1byp7mfdwrim"]
+[gd_scene load_steps=69 format=3 uid="uid://1byp7mfdwrim"]
 
 [ext_resource type="Script" path="res://Scripts/MainScript.gd" id="1_5hgmv"]
 [ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="2_1wkqw"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://bmydngd82n1fi" path="res://Textures/Concrete044D_1K-PNG/Concrete044D_1K-PNG_NormalGL.png" id="25_4wirm"]
 [ext_resource type="ArrayMesh" uid="uid://clkv5vpxhbov6" path="res://tree.mesh" id="26_kv0wh"]
 [ext_resource type="Texture2D" uid="uid://dmmhyrae7lcax" path="res://Textures/Concrete044D_1K-PNG/Concrete044D_1K-PNG_Roughness.png" id="26_vl4em"]
+[ext_resource type="AudioStream" uid="uid://cfuoyxn0r1e31" path="res://audio/night-ambience-17064.mp3" id="28_t0slw"]
 [ext_resource type="Texture2D" uid="uid://ds7dpyka7aufi" path="res://Textures/moon.jpg" id="31_ysf5n"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_7tugj"]
@@ -580,7 +581,7 @@ transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, 0, 0.566
 shape = SubResource("BoxShape3D_6hygk")
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
-transform = Transform3D(0.305111, 0, 0, 0, 0.305111, 0, 0, 0, 0.305111, -35.5013, 0.28289, 23.5128)
+transform = Transform3D(0.305111, 0, 0, 0, 0.305111, 0, 0, 0, 0.305111, -37.2674, 0.28289, 28.1003)
 multimesh = SubResource("MultiMesh_olbi5")
 
 [node name="Cube" type="MeshInstance3D" parent="."]
@@ -588,6 +589,10 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 mesh = ExtResource("26_kv0wh")
 skeleton = NodePath("")
 metadata/_edit_group_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28_t0slw")
+autoplay = true
 
 [connection signal="usingcamera" from="." to="Player" method="_on_node_3d_usingcamera"]
 [connection signal="cam1" from="Player" to="." method="_on_player_cam_1"]
