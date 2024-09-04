@@ -1,0 +1,1 @@
+Je nutno extrahovat zip prototype game. Soubor prototypegame.pck je bohužel moc velký pro github.
